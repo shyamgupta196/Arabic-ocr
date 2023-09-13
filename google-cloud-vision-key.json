@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gcp-kubernetes-ml-app",
+  "private_key_id": "f5d40e80b4409efadf5f57d67f0693e96b108676",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQaTH1hQ4yG18O\nZ/enRYbKNqFHyJxMG0O7D52qV5cBatf4AWnmXSmIuYMObFlnioks97b0ZsoNJ+wn\nydD06/0cxEhK7n/HWzTHZ1NWuxPHJ/1BWreW2wZWsBMtzuMpNTicp2LEFlzbAjEg\nMQEvNQGjTISN20l6yG/mVJpG/uP5kNjFRnybQacqu2ONulE+0YaRmCSUKSCrJccc\n0SAcD5Kc+e+JZmcLA5X1dZjv4dUdzMKIxBBW0CGDNrIIuw5aynqKp/Z6HfJJjfYT\nl9Bj8qjF0OINieRt8eBP65x5CFIvVQDQn9O4QqoAorpa0Cmjy1YxrK9L8BFKBl3L\nx9Zf4FIbAgMBAAECggEAMJGjY+1bLpA0ad4O1/ua+vsaQOlei1n7QdfUzYLWHS1y\nIUjrDhV9/XAGO9FCUJ/3cfRUvcZKpiA8p9UfjkSE2zRfCJ9mReZaeXH5+QdmB46p\nNZbXnB907bTg81b4l3zgsZlMqhfwEdYD7tWcygyXUiAd8BU/nY6ijVIAFjWGmX0d\nCzQHgGOPoQ7kzoAxWQdjdf1jqAl48fMUfYRp/JRTburBU2GkEOFDlIBaYLCU17QV\nhigtWlYp33PotDcDT+t1GFQ3NhkuCU/W/iyldmYrNo/YwmGPQvtR9SLns7DxADia\n2w8SzpDy926Ws0hUWUsvqXlQutsAy22HmX0aTjC82QKBgQD7cBVWrCOynw/QvFsz\nZ1kXMupBLTujh67hLApOTFsnBh8SvGSRIpTeQsdu4EbS88BYAwpdfLhNnVISJmMF\nzerZTdFT0hJWhkLe3b8wpAu3tcX//eNHNZXveW0ZiyOfF0Zo6VS1ZlDbOhtmCdX5\nMvfuk1dlJYNT8FhEmJSkdfnirwKBgQDUMUD+KyOnZfbvmn565f2MKPGtm19iXPkc\nm1xxJbQNIjDlUDv9qGGAcFsUPJPb7R8NGxwdPvj3UlxvEoE1NE8gtpbqW3jGR2B5\nLoK6FNKVMmLTaF1a6z76TO8aE0+tZG3y6Grq3jWzNomBkybQlmEs11tFJvt8wrg4\n1C71LnRSVQKBgDGIuDt1+CZlXalCojjzQELoveuPLLOftF0Z3wHj2wVKGG8JfEp3\nZJqQz1dRicJfUOJF3xHh0zE/L/7xXwqysXST9wwrU3+GPcBIMTU07DYJ8nLnIpJR\nxTMDWfHxTlg2LqHWbeC6wm0d+m3UvDm2x89RaaM8i63KqKkC4i2wLEVzAoGBAIGv\nUJ+G0hWfNdqeu6p1Ig8lfv+xtAwz8nRPZ6InfvF/8g5UiTWwUVbkVGX72ApT0+R4\nqygcsqDFj4S69IkF3U6LCZVWLmxQd1/Y00DTNRjGYKwAXv4QRL9JgeCX6Nx6QtBw\nx9ef04YiUMwGmXRmVCHJxRhwiMdpYpoo5EIpECK5AoGANPXW54g6M9zU9/4Y/pK8\n3eY2Ad1jcqK8iSrzufsTrXgzVnShvyQ5YFaZUuGzK4+2R1jah2fBLluZNFJO9/7o\neTR6tFSHcgR1fK5CYrp8dJq9txJN3F3R3329qSBUjiJrLq0Ysg+muT+O1rgarNgs\n6guCNMX34rPaUGAA/M4i8k8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-cloud-vision-quickstart@gcp-kubernetes-ml-app.iam.gserviceaccount.com",
+  "client_id": "117576378998333497632",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-cloud-vision-quickstart%40gcp-kubernetes-ml-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
