@@ -11,7 +11,7 @@ import pandas as pd
 import os
 import json
 import itertools
-import random
+import argparse 
 from detectron2.utils.logger import setup_logger
 # import some common libraries
 import numpy as np
@@ -25,21 +25,32 @@ from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog
 from detectron2.data import DatasetCatalog, MetadataCatalog
 # from google.colab.patches import cv2_imshow
-
-
-
 setup_logger()
-
 #create detectron config
 cfg = get_cfg()
-
 #set yaml
 cfg.merge_from_file('Multi_Type_TD_TSR\All_X152.yaml')
-
 #set model weights
-# cfg.MODEL.WEIGHTS = 'Multi_Type_TD_TSR\model_final.pth' # Set path model .pth
+cfg.MODEL.WEIGHTS = 'Multi_Type_TD_TSR\model_final.pth' # Set path model .pth
+predictor = DefaultPredictor(cfg) 
 
-# predictor = DefaultPredictor(cfg) 
+
+parser = argparse.ArgumentParser(description='Detect table and do OCR using OpenCV + pytorch model + visionAPI.')
+# Define command-line arguments
+parser.add_argument('input_folder', type=str, help='Path to the folder containing input images.')
+parser.add_argument('--deskew', type=bool , help='Straighten the images.')
+parser.add_argument('output_folder', type=str, help='Path to the folder for saving output images.')
+# Parse the command-line arguments
+args = parser.parse_args()
+
+# Ensure the output folder exists
+os.makedirs(args.output_folder, exist_ok=True)
+
+# Iterate through input images in the input folder
+for filename in os.listdir(args.input_folder):
+    if filename.endswith(('.jpg', '.png', '.jpeg')):
+
+
 
 # path to the image scan of the document
 # file = "Multi_Type_TD_TSR/images/rotated_example.jpeg" 
