@@ -1,22 +1,14 @@
 import detectron2
 from Multi_Type_TD_TSR.google_colab.deskew import deskewImage
 import Multi_Type_TD_TSR.google_colab.table_detection as table_detection
-import Multi_Type_TD_TSR.google_colab.table_structure_recognition_all as tsra
-import Multi_Type_TD_TSR.google_colab.table_structure_recognition_lines as tsrl
-import Multi_Type_TD_TSR.google_colab.table_structure_recognition_wol as tsrwol
-import Multi_Type_TD_TSR.google_colab.table_structure_recognition_lines_wol as tsrlwol
-import Multi_Type_TD_TSR.google_colab.table_xml as txml
-import Multi_Type_TD_TSR.google_colab.table_ocr as tocr
-import pandas as pd
 import os
-import json
-import itertools
+from google_cloud_vision_python.vision import detect_text
+
 import argparse 
 from detectron2.utils.logger import setup_logger
 # import some common libraries
 import numpy as np
 import cv2
-import matplotlib.pyplot as plt
 # import some common detectron2 utilities
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
@@ -34,55 +26,45 @@ cfg.merge_from_file('Multi_Type_TD_TSR\All_X152.yaml')
 cfg.MODEL.WEIGHTS = 'Multi_Type_TD_TSR\model_final.pth' # Set path model .pth
 predictor = DefaultPredictor(cfg) 
 
-
 parser = argparse.ArgumentParser(description='Detect table and do OCR using OpenCV + pytorch model + visionAPI.')
 # Define command-line arguments
-parser.add_argument('input_folder', type=str, help='Path to the folder containing input images.')
-parser.add_argument('--deskew', type=bool , help='Straighten the images.')
-parser.add_argument('output_folder', type=str, help='Path to the folder for saving output images.')
+parser.add_argument('--input_folder', type=str, help='Path to the folder containing input images.')
+parser.add_argument('--ouput_coords', default='ouput_coords', type=str,required=False, help='Path to the folder containing coordinates of outputs.')
+parser.add_argument('--deskew', type=bool , default=False, required=False ,help='Straighten the images.')
+parser.add_argument('--output_folder',default='outputs' ,type=str ,required=False ,help='Path to the folder for saving output images.')
+parser.add_argument('--show_results',default=False ,type=str ,required=False ,help='Path to the folder for saving output images.')
+
 # Parse the command-line arguments
 args = parser.parse_args()
 
 # Ensure the output folder exists
 os.makedirs(args.output_folder, exist_ok=True)
-
 # Iterate through input images in the input folder
-for filename in os.listdir(args.input_folder):
-    if filename.endswith(('.jpg', '.png', '.jpeg')):
+def main():
+    try:
+        for filename in os.listdir(args.input_folder):
+            if filename.endswith(('.jpg', '.png', '.jpeg')):
+                # path to the image scan of the document
+                path = os.path.join(args.input_folder, filename)
+                document_img = cv2.imread(r'{}'.format(path))
+                if args.deskew:
+                    document_img = straighten_text_image(document_img)
 
+                # table_detection.plot_prediction(document_img, predictor)
+                table_list, table_coords, fnames = table_detection.make_prediction(document_img, predictor,args.show_results)
+                file = open( f"{os.path.join(args.output_folder,filename.split('.')[0])}.txt" , 'a', encoding='utf-8') 
+                for num, coords in enumerate(table_coords):
+                    file.write('tables: ')
+                    file.write(f'table {num}: {coords}\n')
 
+                for fname in fnames:
+                    texts = detect_text(fname)
+                    file.write('\n\ntexts:')
+                    file.write(texts[0].description)
+                file.close()
+    except Exception as e:
+        print("Error:",e)
 
-# path to the image scan of the document
-# file = "Multi_Type_TD_TSR/images/rotated_example.jpeg" 
-# original_image = cv2.imread(file)
-
-def deskew(image):
-    # load the image from disk
-    deskewed_image = deskewImage(image)
-
-    print("ORIGINAL IMAGE:")
-    plt.imshow(image)
-    plt.show()
-    print("DESKEWED IMAGE:")
-    plt.imshow(deskewed_image)
-    plt.show()
-
-# def table_detection():
-document_img = cv2.imread(r"FILES\FILES\Screenshot 2023-08-22 135455.png")
-# deskew(document_img)
-# table_detection.plot_prediction(document_img, predictor)
-# table_list, table_coords = table_detection.make_prediction(document_img, predictor)
-# print(table_list, table_coords)
-# # table_detection()
-
-#
-
-
-
-
-
-import cv2
-import numpy as np
 
 def straighten_text_image(image):
     # Convert the image to grayscale
@@ -116,14 +98,6 @@ def straighten_text_image(image):
 
     return rotated_image
 
-# Load the input image
-input_image = cv2.imread('FILES\FILES\SHUKRAN.jpeg')
 
-# Call the straighten_text_image function
-straightened_image = straighten_text_image(input_image)
-
-# Display the original and straightened images
-cv2.imshow('Original Image', input_image)
-cv2.imshow('Straightened Image', straightened_image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+if __name__ == '__main__':
+    main()

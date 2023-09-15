@@ -12,24 +12,24 @@ def detect_text(path):
 
     response = client.text_detection(image=image)
     texts = response.text_annotations
-    print("Texts:")
 
-    for text in texts:
-        print(f'\n"{text.description}"')
+    # for text in texts:
+    #     print(f'\n"{text.description}"')
 
-        vertices = [
-            f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
-        ]
+    #     vertices = [
+    #         f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
+    #     ]
 
-        print("bounds: {}".format(",".join(vertices)))
+    #     print("bounds: {}".format(",".join(vertices)))
 
     if response.error.message:
         raise Exception(
             "{}\nFor more info on error messages, check: "
             "https://cloud.google.com/apis/design/errors".format(response.error.message)
         )
-os.system("pip3 install --upgrade google-cloud-vision")
+    import IPython; IPython.embed(); exit(1)
+    return texts
 
-detect_text(r'FILES\FILES\Screenshot 2023-08-22 135455.png')
-
-import IPython; IPython.embed(); exit(1)
+if __name__ == '__main__':
+    os.system("pip3 install --upgrade google-cloud-vision")
+    print(detect_text(r'FILES\FILES\sell lighting.jpeg'))
