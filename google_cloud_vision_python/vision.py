@@ -14,13 +14,13 @@ def detect_text(path):
     # print("Texts:")
 
     # for text in texts:
-        # print(f'\n"{text.description}"')
+    # print(f'\n"{text.description}"')
 
-        # vertices = [
-            # f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
-        # ]
+    # vertices = [
+    # f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
+    # ]
 
-        # print("bounds: {}".format(",".join(vertices)))
+    # print("bounds: {}".format(",".join(vertices)))
 
     if response.error.message:
         raise Exception(
@@ -29,5 +29,6 @@ def detect_text(path):
         )
     return texts
 
-if __name__ == '__main__':
-    detect_text('..\FILES\FILES\sell lighting.jpeg')
+
+if __name__ == "__main__":
+    detect_text("..\FILES\FILES\sell lighting.jpeg")

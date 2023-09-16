@@ -2,12 +2,14 @@ import detectron2
 from Multi_Type_TD_TSR.google_colab.deskew import deskewImage
 import Multi_Type_TD_TSR.google_colab.table_detection as table_detection
 import os
+
 # from google_cloud_vision_python.vision import detect_text
 from google_cloud_vision_python.translate import translate_text
 
 import argparse
 from detectron2.utils.logger import setup_logger
 import json
+
 # import some common libraries
 import numpy as np
 import cv2
@@ -19,6 +21,7 @@ from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog
 from detectron2.data import DatasetCatalog, MetadataCatalog
+
 os.system("pip3 install --upgrade google-cloud-vision")
 
 # from google.colab.patches import cv2_imshow
@@ -58,7 +61,7 @@ parser.add_argument(
 parser.add_argument(
     "--detect_full_page",
     default=False,
-    type= bool,
+    type=bool,
     required=False,
     help="instead of reading extracted tables it reads full page",
 )
@@ -85,6 +88,7 @@ predictor = DefaultPredictor(cfg)
 os.makedirs(args.output_folder, exist_ok=True)
 os.makedirs(args.output_json, exist_ok=True)
 
+
 def detect_text(path):
     """Detects text in the file."""
     from google.cloud import vision
@@ -101,13 +105,13 @@ def detect_text(path):
     # print("Texts:")
 
     # for text in texts:
-        # print(f'\n"{text.description}"')
+    # print(f'\n"{text.description}"')
 
-        # vertices = [
-            # f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
-        # ]
+    # vertices = [
+    # f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
+    # ]
 
-        # print("bounds: {}".format(",".join(vertices)))
+    # print("bounds: {}".format(",".join(vertices)))
 
     if response.error.message:
         raise Exception(
@@ -116,6 +120,7 @@ def detect_text(path):
         )
     return texts
 
+
 # Iterate through input images in the input folder
 def main():
     try:
@@ -123,7 +128,10 @@ def main():
             if filename.endswith((".jpg", ".png", ".jpeg")):
                 # path to the image scan of the document
                 path = os.path.join(args.input_folder, filename)
-                jsonpath = open(os.path.join(args.output_json, f"{filename.split('.')[0]}.json"),'a')
+                jsonpath = open(
+                    os.path.join(args.output_json, f"{filename.split('.')[0]}.json"),
+                    "a",
+                )
                 document_img = cv2.imread(r"{}".format(path))
                 file = open(
                     f"{os.path.join(args.output_folder,filename.split('.')[0])}.txt",
@@ -136,12 +144,15 @@ def main():
                 # if detecting full page worth of text and not just tables
                 if args.detect_full_page:
                     texts = detect_text(path)
-                    import IPython; IPython.embed(); exit(1)
+                    import IPython
+
+                    IPython.embed()
+                    exit(1)
                     file.write("\n\ntexts:")
                     file.write(texts[0].description)
                     if args.translate:
                         texts = translate_text(str.encode(texts))
-                    texts = ' '.join([f'{i}' for i in texts])
+                    texts = " ".join([f"{i}" for i in texts])
                     json.dump(texts, jsonpath, indent=4)
                     jsonpath.close()
                     file.close()
@@ -159,7 +170,7 @@ def main():
                         file.write(texts[0].description)
                         if args.translate:
                             texts = translate_text(texts)
-                        texts = ' '.join([f'{i}' for i in texts])
+                        texts = " ".join([f"{i}" for i in texts])
                         json.dump(texts, jsonpath, indent=4)
                         jsonpath.close()
                         file.close()
