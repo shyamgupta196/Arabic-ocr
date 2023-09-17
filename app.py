@@ -122,11 +122,6 @@ def main():
             if filename.endswith((".jpg", ".png", ".jpeg")):
                 # path to the image scan of the document
                 path = os.path.join(args.input_folder, filename)
-                jsonpath = open(
-                    os.path.join(args.output_json, f"{filename.split('.')[0]}.json"),
-                    "a",
-                    encoding='utf-8'
-                )
 
                 document_img = cv2.imread(r"{}".format(path))
                 file = open(
@@ -141,29 +136,18 @@ def main():
                 if args.detect_full_page:
                     texts = detect_text(path)
                     for text in texts:
-                        file.write(text.description)
 
                         file.write('\n')
                         vertices = [
                         f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
                         ]
-
-                        file.write("bounds: {}".format(",".join(vertices)))
-                        import IPython;IPython.embed();exit(1)
-
-                    # file.write("\n\ntexts:")
-                    # file.write(texts[0].description)
-                    # if args.translate:
-                    #     texts = translate_text(str.encode(texts))
-                    # texts = " ".join([f"{i}" for i in texts])
-                    json.dump(texts[0].description, jsonpath, indent=4,ensure_ascii=False)
-                    jsonpath.close()
+                        file.write(f'text :{text.description} ,')
+                        file.write("bbox: {}".format(",".join(vertices)))
+                        # import IPython;IPython.embed();exit(1)
                     file.close()
 
                 if not args.detect_full_page:
                     print(' not detecting full')
-                    # import IPython;IPython.embed();exit(1)
-                    # table_detection.plot_prediction(document_img, predictor)
                     table_list, table_coords, fnames = table_detection.make_prediction(
                         document_img, predictor, args.show_results
                     )
@@ -173,10 +157,14 @@ def main():
                     print('tables extracted')
                     for fname in fnames:
                         texts = detect_text(fname)
-                        file.write("\n\ntexts:")
-                        file.write(texts[0].description)
-                        json.dump(str(texts),jsonpath,indent=4, ensure_ascii=False)
-                    jsonpath.close()
+                        for text in texts:
+
+                            file.write('\n')
+                            vertices = [
+                            f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
+                            ]
+                            
+                            file.write("description:{}, bbox: {}".format(text.description , ",".join(vertices)))
                     file.close()
     except Exception as e:
         print("Error:", e)
@@ -234,3 +222,4 @@ if __name__ == "__main__":
     if args.translate:
         print('translating')
         translate_text(args.output_folder, args.output_json)
+    print('DONE !')
