@@ -31,4 +31,4 @@ def detect_text(path):
 
 
 if __name__ == "__main__":
-    detect_text("..\FILES\FILES\sell lighting.jpeg")
+    print(detect_text("FILES\FILES\GANACHE.jpeg")[0])

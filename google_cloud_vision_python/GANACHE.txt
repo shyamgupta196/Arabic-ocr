@@ -1,0 +1,222 @@
+tables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SRtables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:tables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SR
+
+texts:الإجمالي الفرعي / Subtotal
+| Taxes 15%
+المجموع / Total
+132 00 SR
+19.80 SR
+151.80 SRtables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SR
+
+texts:الإجمالي الفرعي / Subtotal
+| Taxes 15%
+المجموع / Total
+132 00 SR
+19.80 SR
+151.80 SRtables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SR
+
+texts:الإجمالي الفرعي / Subtotal
+| Taxes 15%
+المجموع / Total
+132 00 SR
+19.80 SR
+151.80 SRtables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SR
+
+texts:الإجمالي الفرعي / Subtotal
+| Taxes 15%
+المجموع / Total
+132 00 SR
+19.80 SR
+151.80 SRtables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SR
+
+texts:الإجمالي الفرعي / Subtotal
+| Taxes 15%
+المجموع / Total
+132 00 SR
+19.80 SR
+151.80 SRtables: table 0: [77, 451, 643, 116]
+tables: table 1: [76, 603, 317, 76]
+
+
+texts:DESCRIPTION
+الوصف
+[B2B Section ganache ] [Big Cake] Crunchy Chocolate
+کریشه کنان RAB |
+QUANTITY
+الكمية
+1.000 Units
+UNIT
+PRICE
+TAXES AMOUNT
+سعر
+الضرائب الوحدة
+VAT
+AMOUNT
+151.80 Sales Tax | 132.00 SR
+15%
+TOTAL
+PRICE
+قعه
+السعر
+الاجمالي الصربية مبلغ
+19.80 | 151.80 SR
+
+texts:الإجمالي الفرعي / Subtotal
+| Taxes 15%
+المجموع / Total
+132 00 SR
+19.80 SR
+151.80 SR

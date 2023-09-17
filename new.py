@@ -144,10 +144,7 @@ def main():
                 # if detecting full page worth of text and not just tables
                 if args.detect_full_page:
                     texts = detect_text(path)
-                    import IPython
-
-                    IPython.embed()
-                    exit(1)
+                    # import IPython;IPython.embed();exit(1)
                     file.write("\n\ntexts:")
                     file.write(texts[0].description)
                     if args.translate:
