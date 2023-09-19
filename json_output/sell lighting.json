@@ -1,188 +1,1055 @@
 [
-    "translations {\n  translated_text: \"",
-    "Text: Al-Amjad Company for Trade and Industry | Barns",
-    "SA",
-    "Invoice number #1992",
-    "1 Aug 2023 12:04pm | 10401 B2B",
-    "15",
-    "COOKIES CHOCOLATE CHIPS (White)",
-    "Note: Redsea Mall Barnsx-X 553",
-    "PO000011808",
-    "Delivery date: 1/8/2023",
-    ": Subtotal",
-    "(159, (15%) VAT) Total Tax",
-    "Total items: 15 TOTAL",
-    ": TO PAY",
-    "https://takhsosi.vendhq.com/webregister/confirmation",
-    "Sell \\342\\200\\213\\342\\200\\213| Lightspeed Retail",
-    "Anoush",
-    "Anoush Trading Company",
-    "Saeed bin Amer, Al-Tahil, Riyadh 12395 2393",
-    "Tax bill",
-    "Tax Invoice",
-    "Tax number\\\\VAT NUM",
-    "310409608400003",
-    "Customer Code",
-    "Phone",
-    "E-INVOICE",
-    "anoosh.sa",
-    "Call Us-B2B@myanoosh.com",
-    "The product cannot be returned or exchanged after completing the purchase process",
-    "Non-baked products can be replaced if the customer is still inside the branch",
-    "thanks for your visit",
-    "Barns VAT: 310082428800003",
-    "0530005477",
-    "@SR4.80",
-    "SR72.00",
-    "ATIONS",
-    "SR72.00",
-    "SR10.80",
-    "SR82.80",
-    "SR82.80",
-    "DI PART",
-    "553",
-    "RED SEA MALL",
-    "1/1, bbox: (33,57),(731,57),(731,998),(33,998)",
-    "text: company, bbox: (198,273),(217,273),(217,288),(198,288)",
-    "text: glories, bbox: (168,273),(192,273),(192,288),(168,288)",
-    "text: for trade, bbox: (137,274),(163,274),(163,289),(137,289)",
-    "text: and industry, bbox: (96,274),(132,274),(132,289),(96,289)",
-    "text :| ,bbox: (89,274),(92,274),(92,289),(89,289)",
-    "text:Barns,bbox: (59,274),(85,274),(85,290),(59,290)",
-    "text:SA,bbox: (56,294),(71,294),(71,303),(56,303)",
-    "text: bbox number: (146,315),(160,315),(160,331),(146,331)",
-    "text: invoice, bbox: (104,315),(140,315),(140,331),(104,331)",
-    "text :# ,bbox: (83,315),(112,315),(112,331),(83,331)",
-    "text: 1992, bbox: (54,315),(90,315),(90,331),(54,331)",
-    "text:1,bbox: (58,336),(62,336),(62,349),(58,349)",
-    "text:August,bbox: (66,335),(86,335),(86,348),(66,348)",
-    "text:2023,bbox: (90,335),(117,335),(117,348),(90,348)",
-    "text:12:04,bbox: (122,335),(149,335),(149,348),(122,348)",
-    "text:pm,bbox: (153,335),(168,335),(168,348),(153,348)",
-    "text :| ,bbox: (172,335),(173,335),(173,348),(172,348)",
-    "text:10401,bbox: (177,335),(204,335),(204,348),(177,348)",
-    "text: B2B, bbox: (209,334),(230,334),(230,347),(209,347)",
-    "text:15,bbox: (57,370),(70,370),(70,378),(57,378)",
-    "text:COOKIES,bbox: (109,369),(161,369),(161,379),(109,379)",
-    "text:CHOCOLATE,bbox: (165,369),(237,369),(237,379),(165,379)",
-    "text:CHIPS,bbox: (241,369),(276,369),(276,379),(241,379)",
-    "text:( ,bbox: (279,369),(282,369),(282,379),(279,379)",
-    "text:White, box: (282,369),(315,369),(315,379),(282,379)",
-    "text :),bbox: (316,369),(319,369),(319,379),(316,379)",
-    "text:Note,bbox: (58,400),(83,400),(83,410),(58,410)",
-    "text:: ,bbox: (84,400),(86,400),(86,409),(84,409)",
-    "text:Redsea, box: (89,400),(127,400),(127,409),(89,409)",
-    "text:Mall,bbox: (131,400),(153,400),(153,409),(131,409)",
-    "text:Barnsx,bbox: (158,399),(192,399),(192,409),(158,409)",
-    "text:- ,bbox: (196,399),(200,399),(200,408),(196,408)",
-    "text:",
-    "text:553, box: (213,399),(233,399),(233,408),(213,408)",
-    "text:PO000011808,bbox: (59,418),(138,418),(138,427),(59,427)",
-    "text:Delivery,bbox: (59,433),(103,432),(103,443),(59,444)",
-    "text: date, bbox: (107,433),(129,433),(129,443),(107,443)",
-    "text:: ,bbox: (130,433),(132,433),(132,443),(130,443)",
-    "text: 1/8/2023, bbox: (135,432),(185,431),(185,442),(135,443)",
-    "text:: ,bbox: (225,463),(228,463),(228,478),(225,478)",
-    "text: Total, bbox: (190,463),(222,463),(222,478),(190,478)",
-    "Partial text:bbox: (164,463),(187,463),(187,478),(164,478)",
-    "text:Subtotal,bbox: (113,463),(155,463),(155,478),(113,478)",
-    "text:( ,bbox: (263,482),(276,482),(276,494),(263,494)",
-    "text: 159, box: (249,482),(265,482),(265,494),(249,494)",
-    "text:, ,bbox: (246,482),(248,482),(248,494),(246,494)",
-    "text:( ,bbox: (239,482),(246,482),(246,494),(239,494)",
-    "text: 15, bbox: (221,482),(232,482),(232,494),(221,494)",
-    "text:%,bbox: (234,482),(242,482),(242,494),(234,494)",
-    "text :) ,bbox: (216,482),(225,482),(225,494),(216,494)",
-    "text:VAT,bbox: (201,482),(218,482),(218,494),(201,494)",
-    "text:),bbox: (192,482),(201,482),(201,494),(192,494)",
-    "text: tax, bbox: (164,482),(192,482),(192,494),(164,494)",
-    "text:Total,bbox: (115,482),(138,482),(138,494),(115,494)",
-    "text: Tax, bbox: (142,482),(158,482),(158,494),(142,494)",
-    "text:items,bbox: (173,512),(199,512),(199,527),(173,527)",
-    "text:total,bbox: (135,513),(171,513),(171,527),(135,527)",
-    "text:: ,bbox: (125,513),(128,513),(128,527),(125,527)",
-    "text: 15, bbox: (111,513),(119,513),(119,527),(111,527)",
-    "text: TOTAL, bbox: (63,513),(101,513),(101,528),(63,528)",
-    "text:: ,bbox: (157,555),(160,555),(160,569),(157,569)",
-    "text: paid, bbox: (117,555),(153,555),(153,569),(117,569)",
-    "text:TO,bbox: (65,555),(80,555),(80,569),(65,569)",
-    "text:PAY,bbox: (89,555),(110,555),(110,569),(89,569)",
-    "text:https://takhsosi.vendhq.com/webregister/confirmation, bbox: (33,987),(270,979),(270,990),(33,998)",
-    "text:Sell,bbox: (387,57),(404,57),(404,64),(387,64)",
-    "text :| ,bbox: (405,57),(408,57),(408,64),(405,64)",
-    "text: Lightspeed, bbox: (411,57),(457,57),(457,64),(411,64)",
-    "text:Retail,bbox: (461,57),(487,57),(487,64),(461,64)",
-    "text: Anoush, bbox: (378,80),(436,80),(436,117),(378,117)",
-    "text: company, bbox: (398,163),(416,163),(416,172),(398,172)",
-    "text: Anoush, bbox: (379,163),(396,163),(396,172),(379,172)",
-    "text: commercial, bbox: (353,163),(377,163),(377,173),(353,173)",
-    "text: Happy, bbox: (449,185),(462,185),(462,197),(449,197)",
-    "text:bin,bbox: (441,185),(444,185),(444,197),(441,197)",
-    "text: Amer, bbox: (421,185),(432,185),(432,197),(421,197)",
-    "text:,,bbox: (415,185),(416,185),(416,197),(415,197)",
-    "text: referral, bbox: (396,185),(412,185),(412,197),(396,197)",
-    "text:, bbox: (391,185),(392,185),(392,197),(391,197)",
-    "text: Riyadh, bbox: (371,185),(386,185),(386,197),(371,197)",
-    "text:12395,bbox: (332,185),(359,185),(359,197),(332,197)",
-    "text:2393,bbox: (306,185),(329,185),(329,197),(306,197)",
-    "text: invoice, bbox: (386,207),(405,206),(406,218),(387,219)",
-    "text: tax, bbox: (360,208),(384,207),(385,220),(361,221)",
-    "text: Tax, bbox: (360,221),(374,221),(374,229),(360,229)",
-    "text:Invoice,bbox: (377,221),(408,222),(408,231),(377,230)",
-    "text: number, bbox: (420,233),(434,233),(434,247),(420,247)",
-    "text: tax, bbox: (389,233),(416,233),(416,247),(389,247)",
-    "text:\\\\ ,bbox: (382,233),(385,233),(385,247),(382,247)",
-    "text: VAT, bbox: (337,233),(351,233),(351,247),(337,247)",
-    "text:NUM,bbox: (357,233),(380,233),(380,247),(357,247)",
-    "text:310409608400003, bbox: (340,248),(429,248),(429,255),(340,255)",
-    "text:Customer,bbox: (385,275),(438,275),(438,284),(385,284)",
-    "text:Code,bbox: (440,275),(468,275),(468,284),(440,284)",
-    "text: Phone, box: (385,287),(418,287),(418,296),(385,296)",
-    "text:E,bbox: (356,610),(362,610),(362,618),(356,618)",
-    "text:- ,bbox: (363,610),(366,610),(366,618),(363,618)",
-    "text:INVOICE,bbox: (368,610),(415,610),(415,618),(368,618)",
-    "text:anoosh.sa, bbox: (370,815),(410,815),(410,822),(370,822)",
-    "text:Call,bbox: (323,826),(338,826),(338,836),(323,836)",
-    "text:Us-B2B@myanoosh.com, bbox: (341,826),(449,825),(449,835),(341,836)",
-    "text: it is not possible, bbox: (451,846),(472,846),(472,858),(451,858)",
-    "text:retrieve,bbox: (421,846),(448,846),(448,858),(421,858)",
-    "text: or ,bbox: (413,846),(418,846),(418,858),(413,858)",
-    "text :replace ,bbox: (387,846),(410,846),(410,859),(387,859)",
-    "text: product, bbox: (367,847),(385,847),(385,859),(367,859)",
-    "text :after ,bbox: (355,847),(364,847),(364,859),(355,859)",
-    "text: completion, bbox: (338,847),(352,847),(352,859),(338,859)",
-    "text: process, bbox: (318,847),(335,847),(335,859),(318,859)",
-    "text: purchase, bbox: (297,847),(316,847),(316,860),(297,860)",
-    "text: can, bbox: (473,866),(485,866),(485,882),(473,882)",
-    "text :replace ,bbox: (446,866),(468,866),(468,882),(446,882)",
-    "text: Products, bbox: (415,866),(443,866),(443,883),(415,883)",
-    "text: others, bbox: (399,867),(412,867),(412,883),(399,883)",
-    "text: baked, bbox: (372,867),(395,867),(395,883),(372,883)",
-    "text:if,bbox: (362,867),(369,867),(369,883),(362,883)",
-    "text: still, bbox: (341,868),(359,868),(359,884),(341,884)",
-    "text: customer, bbox: (320,868),(338,868),(338,884),(320,884)",
-    "text:inside,bbox: (301,868),(317,868),(317,884),(301,884)",
-    "text: Branch, bbox: (282,868),(298,868),(298,885),(282,885)",
-    "text: Thank you, bbox: (397,900), (411,900), (411,909), (397,909)",
-    "Text: For your visit, bbox: (367,900), (394,900), (394,909), (367,909)",
-    "text:Barns,bbox: (506,272),(534,272),(534,289),(506,289)",
-    "text:VAT,bbox: (540,272),(558,272),(558,289),(540,289)",
-    "text:: ,bbox: (562,272),(567,272),(567,289),(562,289)",
-    "text:310082428800003,bbox: (569,271),(673,272),(673,290),(569,289)",
-    "text:0530005477,bbox: (504,285),(573,285),(573,296),(504,296)",
-    "text:@,bbox: (568,367),(576,367),(576,377),(568,377)",
-    "text: SR4.80, box: (579,366),(616,365),(616,376),(579,377)",
-    "text: SR72.00, box: (667,365),(710,364),(710,375),(667,376)",
-    "text: ATIONS, bbox: (586,668),(614,640),(622,649),(594,676)",
-    "text: SR72.00, box: (664,462),(708,462),(708,470),(664,470)",
-    "text: SR10.80, box: (663,478),(707,479),(707,489),(663,488)",
-    "text: SR82.80, box: (651,512),(703,512),(703,522),(651,522)",
-    "text: SR82.80, box: (652,551),(705,552),(705,565),(652,564)",
-    "text:DI,bbox: (626,637),(638,642),(634,652),(622,647)",
-    "text:PART,bbox: (639,642),(663,652),(659,662),(635,652)",
-    "text:553,bbox: (614,706),(653,699),(656,713),(617,720)",
-    "text :RED ,bbox: (601,719),(621,726),(618,735),(598,728)",
-    "text:SEA,bbox: (620,728),(643,728),(643,738),(620,738)",
-    "text:MALL,bbox: (641,724),(667,709),(672,718),(647,733)",
-    "text:1/1,bbox: (718,972),(731,972),(731,978),(718,978)\"\n}\n"
+    {
+        "text": "company",
+        "bbox": {
+            "x_low": 198,
+            "y_low": 273,
+            "x_high": 217,
+            "y_high": 288
+        }
+    },
+    {
+        "text": "glories",
+        "bbox": {
+            "x_low": 168,
+            "y_low": 273,
+            "x_high": 192,
+            "y_high": 288
+        }
+    },
+    {
+        "text": "for trade",
+        "bbox": {
+            "x_low": 137,
+            "y_low": 274,
+            "x_high": 163,
+            "y_high": 289
+        }
+    },
+    {
+        "text": "and industry",
+        "bbox": {
+            "x_low": 96,
+            "y_low": 274,
+            "x_high": 132,
+            "y_high": 289
+        }
+    },
+    {
+        "text": "Barns",
+        "bbox": {
+            "x_low": 59,
+            "y_low": 274,
+            "x_high": 85,
+            "y_high": 290
+        }
+    },
+    {
+        "text": "SA",
+        "bbox": {
+            "x_low": 56,
+            "y_low": 294,
+            "x_high": 71,
+            "y_high": 303
+        }
+    },
+    {
+        "text": "invoice",
+        "bbox": {
+            "x_low": 104,
+            "y_low": 315,
+            "x_high": 140,
+            "y_high": 331
+        }
+    },
+    {
+        "text": "1992",
+        "bbox": {
+            "x_low": 54,
+            "y_low": 315,
+            "x_high": 90,
+            "y_high": 331
+        }
+    },
+    {
+        "text": "1",
+        "bbox": {
+            "x_low": 58,
+            "y_low": 336,
+            "x_high": 62,
+            "y_high": 349
+        }
+    },
+    {
+        "text": "August",
+        "bbox": {
+            "x_low": 66,
+            "y_low": 335,
+            "x_high": 86,
+            "y_high": 348
+        }
+    },
+    {
+        "text": "2023",
+        "bbox": {
+            "x_low": 90,
+            "y_low": 335,
+            "x_high": 117,
+            "y_high": 348
+        }
+    },
+    {
+        "text": "12:04",
+        "bbox": {
+            "x_low": 122,
+            "y_low": 335,
+            "x_high": 149,
+            "y_high": 348
+        }
+    },
+    {
+        "text": "pm",
+        "bbox": {
+            "x_low": 153,
+            "y_low": 335,
+            "x_high": 168,
+            "y_high": 348
+        }
+    },
+    {
+        "text": "10401",
+        "bbox": {
+            "x_low": 177,
+            "y_low": 335,
+            "x_high": 204,
+            "y_high": 348
+        }
+    },
+    {
+        "text": "B2B",
+        "bbox": {
+            "x_low": 209,
+            "y_low": 334,
+            "x_high": 230,
+            "y_high": 347
+        }
+    },
+    {
+        "text": "15",
+        "bbox": {
+            "x_low": 57,
+            "y_low": 370,
+            "x_high": 70,
+            "y_high": 378
+        }
+    },
+    {
+        "text": "COOKIES",
+        "bbox": {
+            "x_low": 109,
+            "y_low": 369,
+            "x_high": 161,
+            "y_high": 379
+        }
+    },
+    {
+        "text": "CHOCOLATE",
+        "bbox": {
+            "x_low": 165,
+            "y_low": 369,
+            "x_high": 237,
+            "y_high": 379
+        }
+    },
+    {
+        "text": "CHIPS",
+        "bbox": {
+            "x_low": 241,
+            "y_low": 369,
+            "x_high": 276,
+            "y_high": 379
+        }
+    },
+    {
+        "text": "(",
+        "bbox": {
+            "x_low": 279,
+            "y_low": 369,
+            "x_high": 282,
+            "y_high": 379
+        }
+    },
+    {
+        "text": "Note",
+        "bbox": {
+            "x_low": 58,
+            "y_low": 400,
+            "x_high": 83,
+            "y_high": 410
+        }
+    },
+    {
+        "text": ":",
+        "bbox": {
+            "x_low": 84,
+            "y_low": 400,
+            "x_high": 86,
+            "y_high": 409
+        }
+    },
+    {
+        "text": "Mall",
+        "bbox": {
+            "x_low": 131,
+            "y_low": 400,
+            "x_high": 153,
+            "y_high": 409
+        }
+    },
+    {
+        "text": "Barnsx",
+        "bbox": {
+            "x_low": 158,
+            "y_low": 399,
+            "x_high": 192,
+            "y_high": 409
+        }
+    },
+    {
+        "text": "-",
+        "bbox": {
+            "x_low": 196,
+            "y_low": 399,
+            "x_high": 200,
+            "y_high": 408
+        }
+    },
+    {
+        "text": "PO000011808",
+        "bbox": {
+            "x_low": 59,
+            "y_low": 418,
+            "x_high": 138,
+            "y_high": 427
+        }
+    },
+    {
+        "text": "Delivery",
+        "bbox": {
+            "x_low": 59,
+            "y_low": 432,
+            "x_high": 103,
+            "y_high": 444
+        }
+    },
+    {
+        "text": "date",
+        "bbox": {
+            "x_low": 107,
+            "y_low": 433,
+            "x_high": 129,
+            "y_high": 443
+        }
+    },
+    {
+        "text": ":",
+        "bbox": {
+            "x_low": 130,
+            "y_low": 433,
+            "x_high": 132,
+            "y_high": 443
+        }
+    },
+    {
+        "text": "1/8/2023",
+        "bbox": {
+            "x_low": 135,
+            "y_low": 431,
+            "x_high": 185,
+            "y_high": 443
+        }
+    },
+    {
+        "text": ":",
+        "bbox": {
+            "x_low": 225,
+            "y_low": 463,
+            "x_high": 228,
+            "y_high": 478
+        }
+    },
+    {
+        "text": "Total",
+        "bbox": {
+            "x_low": 190,
+            "y_low": 463,
+            "x_high": 222,
+            "y_high": 478
+        }
+    },
+    {
+        "text": "bbox: (164",
+        "bbox": {
+            "x_low": 164,
+            "y_low": 463,
+            "x_high": 187,
+            "y_high": 478
+        }
+    },
+    {
+        "text": "Subtotal",
+        "bbox": {
+            "x_low": 113,
+            "y_low": 463,
+            "x_high": 155,
+            "y_high": 478
+        }
+    },
+    {
+        "text": "(",
+        "bbox": {
+            "x_low": 263,
+            "y_low": 482,
+            "x_high": 276,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "",
+        "bbox": {
+            "x_low": 246,
+            "y_low": 482,
+            "x_high": 248,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "(",
+        "bbox": {
+            "x_low": 239,
+            "y_low": 482,
+            "x_high": 246,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "15",
+        "bbox": {
+            "x_low": 221,
+            "y_low": 482,
+            "x_high": 232,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "%",
+        "bbox": {
+            "x_low": 234,
+            "y_low": 482,
+            "x_high": 242,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "VAT",
+        "bbox": {
+            "x_low": 201,
+            "y_low": 482,
+            "x_high": 218,
+            "y_high": 494
+        }
+    },
+    {
+        "text": ")",
+        "bbox": {
+            "x_low": 192,
+            "y_low": 482,
+            "x_high": 201,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "tax",
+        "bbox": {
+            "x_low": 164,
+            "y_low": 482,
+            "x_high": 192,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "Total",
+        "bbox": {
+            "x_low": 115,
+            "y_low": 482,
+            "x_high": 138,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "Tax",
+        "bbox": {
+            "x_low": 142,
+            "y_low": 482,
+            "x_high": 158,
+            "y_high": 494
+        }
+    },
+    {
+        "text": "items",
+        "bbox": {
+            "x_low": 173,
+            "y_low": 512,
+            "x_high": 199,
+            "y_high": 527
+        }
+    },
+    {
+        "text": "total",
+        "bbox": {
+            "x_low": 135,
+            "y_low": 513,
+            "x_high": 171,
+            "y_high": 527
+        }
+    },
+    {
+        "text": ":",
+        "bbox": {
+            "x_low": 125,
+            "y_low": 513,
+            "x_high": 128,
+            "y_high": 527
+        }
+    },
+    {
+        "text": "15",
+        "bbox": {
+            "x_low": 111,
+            "y_low": 513,
+            "x_high": 119,
+            "y_high": 527
+        }
+    },
+    {
+        "text": "TOTAL",
+        "bbox": {
+            "x_low": 63,
+            "y_low": 513,
+            "x_high": 101,
+            "y_high": 528
+        }
+    },
+    {
+        "text": ":",
+        "bbox": {
+            "x_low": 157,
+            "y_low": 555,
+            "x_high": 160,
+            "y_high": 569
+        }
+    },
+    {
+        "text": "paid",
+        "bbox": {
+            "x_low": 117,
+            "y_low": 555,
+            "x_high": 153,
+            "y_high": 569
+        }
+    },
+    {
+        "text": "TO",
+        "bbox": {
+            "x_low": 65,
+            "y_low": 555,
+            "x_high": 80,
+            "y_high": 569
+        }
+    },
+    {
+        "text": "PAY",
+        "bbox": {
+            "x_low": 89,
+            "y_low": 555,
+            "x_high": 110,
+            "y_high": 569
+        }
+    },
+    {
+        "text": "https://takhsosi.vendhq.com/webregister/confirmation",
+        "bbox": {
+            "x_low": 33,
+            "y_low": 979,
+            "x_high": 270,
+            "y_high": 998
+        }
+    },
+    {
+        "text": "Sell",
+        "bbox": {
+            "x_low": 387,
+            "y_low": 57,
+            "x_high": 404,
+            "y_high": 64
+        }
+    },
+    {
+        "text": "Lightspeed",
+        "bbox": {
+            "x_low": 411,
+            "y_low": 57,
+            "x_high": 457,
+            "y_high": 64
+        }
+    },
+    {
+        "text": "Retail",
+        "bbox": {
+            "x_low": 461,
+            "y_low": 57,
+            "x_high": 487,
+            "y_high": 64
+        }
+    },
+    {
+        "text": "Anoush",
+        "bbox": {
+            "x_low": 378,
+            "y_low": 80,
+            "x_high": 436,
+            "y_high": 117
+        }
+    },
+    {
+        "text": "company",
+        "bbox": {
+            "x_low": 398,
+            "y_low": 163,
+            "x_high": 416,
+            "y_high": 172
+        }
+    },
+    {
+        "text": "Anoush",
+        "bbox": {
+            "x_low": 379,
+            "y_low": 163,
+            "x_high": 396,
+            "y_high": 172
+        }
+    },
+    {
+        "text": "commercial",
+        "bbox": {
+            "x_low": 353,
+            "y_low": 163,
+            "x_high": 377,
+            "y_high": 173
+        }
+    },
+    {
+        "text": "Happy",
+        "bbox": {
+            "x_low": 449,
+            "y_low": 185,
+            "x_high": 462,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "bin",
+        "bbox": {
+            "x_low": 441,
+            "y_low": 185,
+            "x_high": 444,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "Amer",
+        "bbox": {
+            "x_low": 421,
+            "y_low": 185,
+            "x_high": 432,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "",
+        "bbox": {
+            "x_low": 415,
+            "y_low": 185,
+            "x_high": 416,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "referral",
+        "bbox": {
+            "x_low": 396,
+            "y_low": 185,
+            "x_high": 412,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "",
+        "bbox": {
+            "x_low": 391,
+            "y_low": 185,
+            "x_high": 392,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "Riyadh",
+        "bbox": {
+            "x_low": 371,
+            "y_low": 185,
+            "x_high": 386,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "12395",
+        "bbox": {
+            "x_low": 332,
+            "y_low": 185,
+            "x_high": 359,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "2393",
+        "bbox": {
+            "x_low": 306,
+            "y_low": 185,
+            "x_high": 329,
+            "y_high": 197
+        }
+    },
+    {
+        "text": "invoice",
+        "bbox": {
+            "x_low": 387,
+            "y_low": 206,
+            "x_high": 406,
+            "y_high": 219
+        }
+    },
+    {
+        "text": "tax",
+        "bbox": {
+            "x_low": 361,
+            "y_low": 207,
+            "x_high": 385,
+            "y_high": 221
+        }
+    },
+    {
+        "text": "Tax",
+        "bbox": {
+            "x_low": 360,
+            "y_low": 221,
+            "x_high": 374,
+            "y_high": 229
+        }
+    },
+    {
+        "text": "Invoice",
+        "bbox": {
+            "x_low": 377,
+            "y_low": 222,
+            "x_high": 408,
+            "y_high": 230
+        }
+    },
+    {
+        "text": "number",
+        "bbox": {
+            "x_low": 420,
+            "y_low": 233,
+            "x_high": 434,
+            "y_high": 247
+        }
+    },
+    {
+        "text": "tax",
+        "bbox": {
+            "x_low": 389,
+            "y_low": 233,
+            "x_high": 416,
+            "y_high": 247
+        }
+    },
+    {
+        "text": "\\\\",
+        "bbox": {
+            "x_low": 382,
+            "y_low": 233,
+            "x_high": 385,
+            "y_high": 247
+        }
+    },
+    {
+        "text": "VAT",
+        "bbox": {
+            "x_low": 337,
+            "y_low": 233,
+            "x_high": 351,
+            "y_high": 247
+        }
+    },
+    {
+        "text": "NUM",
+        "bbox": {
+            "x_low": 357,
+            "y_low": 233,
+            "x_high": 380,
+            "y_high": 247
+        }
+    },
+    {
+        "text": "310409608400003",
+        "bbox": {
+            "x_low": 340,
+            "y_low": 248,
+            "x_high": 429,
+            "y_high": 255
+        }
+    },
+    {
+        "text": "Customer",
+        "bbox": {
+            "x_low": 385,
+            "y_low": 275,
+            "x_high": 438,
+            "y_high": 284
+        }
+    },
+    {
+        "text": "Code",
+        "bbox": {
+            "x_low": 440,
+            "y_low": 275,
+            "x_high": 468,
+            "y_high": 284
+        }
+    },
+    {
+        "text": "E",
+        "bbox": {
+            "x_low": 356,
+            "y_low": 610,
+            "x_high": 362,
+            "y_high": 618
+        }
+    },
+    {
+        "text": "-",
+        "bbox": {
+            "x_low": 363,
+            "y_low": 610,
+            "x_high": 366,
+            "y_high": 618
+        }
+    },
+    {
+        "text": "INVOICE",
+        "bbox": {
+            "x_low": 368,
+            "y_low": 610,
+            "x_high": 415,
+            "y_high": 618
+        }
+    },
+    {
+        "text": "anoosh.sa",
+        "bbox": {
+            "x_low": 370,
+            "y_low": 815,
+            "x_high": 410,
+            "y_high": 822
+        }
+    },
+    {
+        "text": "Call",
+        "bbox": {
+            "x_low": 323,
+            "y_low": 826,
+            "x_high": 338,
+            "y_high": 836
+        }
+    },
+    {
+        "text": "Us-B2B@myanoosh.com",
+        "bbox": {
+            "x_low": 341,
+            "y_low": 825,
+            "x_high": 449,
+            "y_high": 836
+        }
+    },
+    {
+        "text": "it is not possible",
+        "bbox": {
+            "x_low": 451,
+            "y_low": 846,
+            "x_high": 472,
+            "y_high": 858
+        }
+    },
+    {
+        "text": "retrieve",
+        "bbox": {
+            "x_low": 421,
+            "y_low": 846,
+            "x_high": 448,
+            "y_high": 858
+        }
+    },
+    {
+        "text": "or",
+        "bbox": {
+            "x_low": 413,
+            "y_low": 846,
+            "x_high": 418,
+            "y_high": 858
+        }
+    },
+    {
+        "text": "product",
+        "bbox": {
+            "x_low": 367,
+            "y_low": 847,
+            "x_high": 385,
+            "y_high": 859
+        }
+    },
+    {
+        "text": "completion",
+        "bbox": {
+            "x_low": 338,
+            "y_low": 847,
+            "x_high": 352,
+            "y_high": 859
+        }
+    },
+    {
+        "text": "process",
+        "bbox": {
+            "x_low": 318,
+            "y_low": 847,
+            "x_high": 335,
+            "y_high": 859
+        }
+    },
+    {
+        "text": "purchase",
+        "bbox": {
+            "x_low": 297,
+            "y_low": 847,
+            "x_high": 316,
+            "y_high": 860
+        }
+    },
+    {
+        "text": "can",
+        "bbox": {
+            "x_low": 473,
+            "y_low": 866,
+            "x_high": 485,
+            "y_high": 882
+        }
+    },
+    {
+        "text": "Products",
+        "bbox": {
+            "x_low": 415,
+            "y_low": 866,
+            "x_high": 443,
+            "y_high": 883
+        }
+    },
+    {
+        "text": "others",
+        "bbox": {
+            "x_low": 399,
+            "y_low": 867,
+            "x_high": 412,
+            "y_high": 883
+        }
+    },
+    {
+        "text": "baked",
+        "bbox": {
+            "x_low": 372,
+            "y_low": 867,
+            "x_high": 395,
+            "y_high": 883
+        }
+    },
+    {
+        "text": "if",
+        "bbox": {
+            "x_low": 362,
+            "y_low": 867,
+            "x_high": 369,
+            "y_high": 883
+        }
+    },
+    {
+        "text": "still",
+        "bbox": {
+            "x_low": 341,
+            "y_low": 868,
+            "x_high": 359,
+            "y_high": 884
+        }
+    },
+    {
+        "text": "customer",
+        "bbox": {
+            "x_low": 320,
+            "y_low": 868,
+            "x_high": 338,
+            "y_high": 884
+        }
+    },
+    {
+        "text": "inside",
+        "bbox": {
+            "x_low": 301,
+            "y_low": 868,
+            "x_high": 317,
+            "y_high": 884
+        }
+    },
+    {
+        "text": "Branch",
+        "bbox": {
+            "x_low": 282,
+            "y_low": 868,
+            "x_high": 298,
+            "y_high": 885
+        }
+    },
+    {
+        "text": "Barns",
+        "bbox": {
+            "x_low": 506,
+            "y_low": 272,
+            "x_high": 534,
+            "y_high": 289
+        }
+    },
+    {
+        "text": "VAT",
+        "bbox": {
+            "x_low": 540,
+            "y_low": 272,
+            "x_high": 558,
+            "y_high": 289
+        }
+    },
+    {
+        "text": ":",
+        "bbox": {
+            "x_low": 562,
+            "y_low": 272,
+            "x_high": 567,
+            "y_high": 289
+        }
+    },
+    {
+        "text": "310082428800003",
+        "bbox": {
+            "x_low": 569,
+            "y_low": 272,
+            "x_high": 673,
+            "y_high": 289
+        }
+    },
+    {
+        "text": "0530005477",
+        "bbox": {
+            "x_low": 504,
+            "y_low": 285,
+            "x_high": 573,
+            "y_high": 296
+        }
+    },
+    {
+        "text": "@",
+        "bbox": {
+            "x_low": 568,
+            "y_low": 367,
+            "x_high": 576,
+            "y_high": 377
+        }
+    },
+    {
+        "text": "ATIONS",
+        "bbox": {
+            "x_low": 594,
+            "y_low": 640,
+            "x_high": 622,
+            "y_high": 676
+        }
+    },
+    {
+        "text": "DI",
+        "bbox": {
+            "x_low": 622,
+            "y_low": 642,
+            "x_high": 634,
+            "y_high": 647
+        }
+    },
+    {
+        "text": "PART",
+        "bbox": {
+            "x_low": 635,
+            "y_low": 652,
+            "x_high": 659,
+            "y_high": 652
+        }
+    },
+    {
+        "text": "553",
+        "bbox": {
+            "x_low": 617,
+            "y_low": 699,
+            "x_high": 656,
+            "y_high": 720
+        }
+    },
+    {
+        "text": "SEA",
+        "bbox": {
+            "x_low": 620,
+            "y_low": 728,
+            "x_high": 643,
+            "y_high": 738
+        }
+    },
+    {
+        "text": "MALL",
+        "bbox": {
+            "x_low": 647,
+            "y_low": 709,
+            "x_high": 672,
+            "y_high": 733
+        }
+    },
+    {
+        "text": "1/1",
+        "bbox": {
+            "x_low": 718,
+            "y_low": 972,
+            "x_high": 731,
+            "y_high": 978
+        }
+    }
 ]
