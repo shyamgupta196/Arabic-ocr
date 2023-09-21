@@ -1,3 +1,4 @@
+# author - Shyam Gupta, github.com/shyamgupta196
 # -*- coding: utf-8 -*-
 
 import detectron2
@@ -141,12 +142,12 @@ def main():
                         vertices = [
                         f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
                         ]
-                        file.write(f'text :{text.description} ,')
+                        file.write(f'text :{text.description} , ')
                         file.write("bbox: {}".format(",".join(vertices)))
                         # import IPython;IPython.embed();exit(1)
                     file.close()
 
-                if not args.detect_full_page:
+                else:
                     print(' not detecting full')
                     table_list, table_coords, fnames = table_detection.make_prediction(
                         document_img, predictor, args.show_results
@@ -163,7 +164,7 @@ def main():
                             vertices = [
                             f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
                             ]                            
-                            file.write(f'text :{text.description} ,')
+                            file.write(f'text :{text.description} , ')
                             file.write("bbox: {}".format(",".join(vertices)))
                     file.close()
     except Exception as e:
@@ -206,24 +207,43 @@ def translate_text(
 
             formatted_data = []
 
-            for item in str(response).split('\\n'):
-                # Extract text and bounding box coordinates using regular expressions
-                text_match = re.search(r"text:(.*?),", item)
-                bbox_match = re.search(r"bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)", item)
-                
-                if text_match and bbox_match:
-                    text = text_match.group(1).strip()
-                    x1, y1, x2, y1, x2, y2, x1, y2 = map(int, bbox_match.groups())
-                    item_data = {
-                        "text": text,
-                        "bbox": {
-                            "x_low": min(x1, x2),
-                            "y_low": min(y1, y2),
-                            "x_high": max(x1, x2),
-                            "y_high": max(y1,y2)
+            # import IPython;IPython.embed();exit(1)
+            for count, item in enumerate(str(response).split('\\n')):
+                if count == 0:
+                    text = ' '.join(response.translations[0].translated_text.split('bbox')[0].split('\n'))
+                    bbox = 'bbox'+response.translations[0].translated_text.split('bbox')[1]
+                    bbox_match = re.search("bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)", bbox)
+                    if bbox_match:
+                        x1, y1, x2, y1, x2, y2, x1, y2 = map(int, bbox_match.groups())
+                        item_data = {
+                            "text": text,
+                            "bbox": {
+                                "x_low": min(x1, x2),
+                                "y_low": min(y1, y2),
+                                "x_high": max(x1, x2),
+                                "y_high": max(y1,y2)
+                            }
                         }
-                    }
-                    formatted_data.append(item_data)
+                        formatted_data.append(item_data)
+
+                # Extract text and bounding box coordinates using regular expressions
+                else:
+                    text_match = re.search(r"text:(.*?),", item)
+                    bbox_match = re.search(r"bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)", item)
+                    
+                    if text_match and bbox_match:
+                        text = text_match.group(1).strip()
+                        x1, y1, x2, y1, x2, y2, x1, y2 = map(int, bbox_match.groups())
+                        item_data = {
+                            "text": text,
+                            "bbox": {
+                                "x_low": min(x1, x2),
+                                "y_low": min(y1, y2),
+                                "x_high": max(x1, x2),
+                                "y_high": max(y1,y2)
+                            }
+                        }
+                        formatted_data.append(item_data)
 
             json.dump(formatted_data ,translated_json,ensure_ascii=False, indent=4) # text description,\\nbbox,des,\\n,bbox\\n
             translated_json.close()
@@ -231,7 +251,6 @@ def translate_text(
     # Translate text from English to French
     # Detail on supported types can be found here:
     # https://cloud.google.com/translate/docs/supported-formats
-    import IPython;IPython.embed();exit(1)
 
     # Display the translation for each input text provided
     # for translation in response.translations:

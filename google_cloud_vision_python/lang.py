@@ -1,5 +1,6 @@
-from google.cloud import translate
+## to translate to other languages ! RUN THIS. you can find language codes from here.
 
+from google.cloud import translate
 
 def get_supported_languages(
     project_id: str = "YOUR_PROJECT_ID",

@@ -1,3 +1,5 @@
+# this is inspired code from gcloud. the translation is carried in app.py with modified code.
+
 import os
 
 # Imports the Google Cloud Translation library
