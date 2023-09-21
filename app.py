@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import detectron2
-from Multi_Type_TD_TSR.google_colab.deskew import deskewImage
-import Multi_Type_TD_TSR.google_colab.table_detection as table_detection
+from main.google_colab.deskew import deskewImage
+import main.google_colab.table_detection as table_detection
 import os
 from google_cloud_vision_python.vision import detect_text
 from google.cloud import translate
@@ -14,7 +14,8 @@ from detectron2.utils.logger import setup_logger
 # import some common libraries
 import numpy as np
 import cv2
-import re 
+import re
+
 # import some common detectron2 utilities
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
@@ -28,9 +29,9 @@ setup_logger()
 # create detectron config
 cfg = get_cfg()
 # set yaml
-cfg.merge_from_file("Multi_Type_TD_TSR\All_X152.yaml")
+cfg.merge_from_file("main\All_X152.yaml")
 # set model weights
-cfg.MODEL.WEIGHTS = "Multi_Type_TD_TSR\model_final.pth"  # Set path model .pth
+cfg.MODEL.WEIGHTS = "main\model_final.pth"  # Set path model .pth
 
 parser = argparse.ArgumentParser(
     description="Detect table and do OCR using OpenCV + pytorch model + visionAPI."
@@ -137,41 +138,42 @@ def main():
                 if args.detect_full_page:
                     texts = detect_text(path)
                     for text in texts:
-
-                        file.write('\n')
+                        file.write("\n")
                         vertices = [
-                        f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
+                            f"({vertex.x},{vertex.y})"
+                            for vertex in text.bounding_poly.vertices
                         ]
-                        file.write(f'text :{text.description} , ')
+                        file.write(f"text :{text.description} , ")
                         file.write("bbox: {}".format(",".join(vertices)))
                         # import IPython;IPython.embed();exit(1)
                     file.close()
 
                 else:
-                    print(' not detecting full')
+                    print(" not detecting full")
                     table_list, table_coords, fnames = table_detection.make_prediction(
                         document_img, predictor, args.show_results
                     )
                     for num, coords in enumerate(table_coords):
                         file.write("tables: ")
                         file.write(f"table {num}: {coords}\n")
-                    print('tables extracted')
+                    print("tables extracted")
                     for fname in fnames:
                         texts = detect_text(fname)
                         for text in texts:
-
-                            file.write('\n')
+                            file.write("\n")
                             vertices = [
-                            f"({vertex.x},{vertex.y})" for vertex in text.bounding_poly.vertices
-                            ]                            
-                            file.write(f'text :{text.description} , ')
+                                f"({vertex.x},{vertex.y})"
+                                for vertex in text.bounding_poly.vertices
+                            ]
+                            file.write(f"text :{text.description} , ")
                             file.write("bbox: {}".format(",".join(vertices)))
                     file.close()
     except Exception as e:
         print("Error:", e)
 
-def translate_text( 
-    input:str, output:str , project_id: str = "gcp-kubernetes-ml-app"
+
+def translate_text(
+    input: str, output: str, project_id: str = "gcp-kubernetes-ml-app"
 ) -> translate.TranslationServiceClient:
     """Translating Text."""
 
@@ -181,19 +183,19 @@ def translate_text(
 
     parent = f"projects/{project_id}/locations/{location}"
     for filename in os.listdir(input):
-        print('reading')
+        print("reading")
         print(filename)
         if filename.endswith(".txt"):
             file = open(
-                    os.path.join(input,filename),
-                    "r",
-                    encoding="utf-8",
-                )
+                os.path.join(input, filename),
+                "r",
+                encoding="utf-8",
+            )
             translated_json = open(
-                    f"{os.path.join(output,filename.split('.')[0])}.json",
-                    "a",
-                    encoding="utf-8",
-                )
+                f"{os.path.join(output,filename.split('.')[0])}.json",
+                "a",
+                encoding="utf-8",
+            )
 
             response = client.translate_text(
                 request={
@@ -208,11 +210,21 @@ def translate_text(
             formatted_data = []
 
             # import IPython;IPython.embed();exit(1)
-            for count, item in enumerate(str(response).split('\\n')):
+            for count, item in enumerate(str(response).split("\\n")):
                 if count == 0:
-                    text = ' '.join(response.translations[0].translated_text.split('bbox')[0].split('\n'))
-                    bbox = 'bbox'+response.translations[0].translated_text.split('bbox')[1]
-                    bbox_match = re.search("bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)", bbox)
+                    text = " ".join(
+                        response.translations[0]
+                        .translated_text.split("bbox")[0]
+                        .split("\n")
+                    )
+                    bbox = (
+                        "bbox"
+                        + response.translations[0].translated_text.split("bbox")[1]
+                    )
+                    bbox_match = re.search(
+                        "bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)",
+                        bbox,
+                    )
                     if bbox_match:
                         x1, y1, x2, y1, x2, y2, x1, y2 = map(int, bbox_match.groups())
                         item_data = {
@@ -221,16 +233,19 @@ def translate_text(
                                 "x_low": min(x1, x2),
                                 "y_low": min(y1, y2),
                                 "x_high": max(x1, x2),
-                                "y_high": max(y1,y2)
-                            }
+                                "y_high": max(y1, y2),
+                            },
                         }
                         formatted_data.append(item_data)
 
                 # Extract text and bounding box coordinates using regular expressions
                 else:
                     text_match = re.search(r"text:(.*?),", item)
-                    bbox_match = re.search(r"bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)", item)
-                    
+                    bbox_match = re.search(
+                        r"bbox: \((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\),\((\d+),(\d+)\)",
+                        item,
+                    )
+
                     if text_match and bbox_match:
                         text = text_match.group(1).strip()
                         x1, y1, x2, y1, x2, y2, x1, y2 = map(int, bbox_match.groups())
@@ -240,12 +255,14 @@ def translate_text(
                                 "x_low": min(x1, x2),
                                 "y_low": min(y1, y2),
                                 "x_high": max(x1, x2),
-                                "y_high": max(y1,y2)
-                            }
+                                "y_high": max(y1, y2),
+                            },
                         }
                         formatted_data.append(item_data)
 
-            json.dump(formatted_data ,translated_json,ensure_ascii=False, indent=4) # text description,\\nbbox,des,\\n,bbox\\n
+            json.dump(
+                formatted_data, translated_json, ensure_ascii=False, indent=4
+            )  # text description,\\nbbox,des,\\n,bbox\\n
             translated_json.close()
             file.close()
     # Translate text from English to French
@@ -258,9 +275,10 @@ def translate_text(
 
     # return response
 
+
 if __name__ == "__main__":
     main()
     if args.translate:
-        print('translating')
+        print("translating")
         translate_text(args.output_folder, args.output_json)
-    print('DONE !')
+    print("DONE !")
