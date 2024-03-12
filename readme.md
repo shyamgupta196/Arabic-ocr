@@ -1,5 +1,7 @@
 # Mindful Automations Table & Arabic OCR
-I have been asked to apply OCR on invoices! Lets try to give our best shot at detecting tables and texts.
+
+Problem - 
+I was given Invoices in Arabic Language, and asked to translate and extract data from them. people were using google camera to translate invoices but it was very tedious process, to do so. I was asked to translate and store the data in JSON's, to streamline the process
 
 [https://huggingface.co/keremberke/yolov8s-table-extraction](https://huggingface.co/keremberke/yolov8s-table-extraction) 
 
@@ -218,3 +220,7 @@ CHECK using str(texts) on file and see why encoding not working ! ✅
 # RUN it
 python app.py --input_folder 'FILES/FILES' --detect_full_page True --translate True
 ```
+
+
+Solution-
+I was asked to use GCP to translate the data. I simple used PADDLE OCR to extract the data and google API to Translate and save it in JSON format.
