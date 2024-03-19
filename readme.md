@@ -3,15 +3,12 @@
 Problem - 
 I was given Invoices in Arabic Language, and asked to translate and extract data from them. people were using google camera to translate invoices but it was very tedious process, to do so. I was asked to translate and store the data in JSON's, to streamline the process
 
+I started using yolov8 for the problem but it struggled with boundary and edges.
 [https://huggingface.co/keremberke/yolov8s-table-extraction](https://huggingface.co/keremberke/yolov8s-table-extraction) 
 
-The HF yolov8was total ❎!
+Then I found ****Multi-Type-TD-TSR**** which saved time and energy✅
 
-****Multi-Type-TD-TSR - This worked.**** ✅
-
-now looking for Arabic OCR. ❎
-
-I think **GOOGLE VISION API** is best for the job.  
+I stumbled accross **Google Cloud suite** and it was the best for the job.  
 
 [**REFERENCE TO GCP](https://cloud.google.com/vision/docs/ocr?_ga=2.134025102.-1000806481.1689720701&cloudshell=false&apix_params=%7B%22resource%22%3A%7B%22requests%22%3A%5B%7B%22features%22%3A%5B%7B%22type%22%3A%22TEXT_DETECTION%22%7D%5D%2C%22image%22%3A%7B%22source%22%3A%7B%22imageUri%22%3A%22gs%3A%2F%2Fcloud-samples-data%2Fvision%2Focr%2Fsign.jpg%22%7D%7D%7D%5D%7D%7D#try_it) link to cloud page…..**
 
@@ -20,13 +17,12 @@ I think **GOOGLE VISION API** is best for the job.
 pip install -r requirements.txt
 ```
 
-### How it works + my progress + personal notes
-
+# How it works + my progress notes 
+input your invoice images and the script returns the text on the invoices.
 ![Untitled](Mindful%20Automations%20Table%20&%20Arabic%20OCR%20f157866291334892acd0d80731d68c0e/Untitled.png)
 
-fresh results coming in !!
 
-### Commands used in GCP vision API
+### Enable GCP vision API
 
 ```bash
 # 1. select project & Enable vision API
@@ -38,7 +34,7 @@ cloudshell open-workspace .
 export PROJECT_ID=gcp-kubernetes-ml-app
 ```
 
-### Authentication
+### Authenticate and setup Local Google CLI
 
 ```bash
 #Create a service account to authenticate your API requests:
@@ -57,7 +53,7 @@ gcloud iam service-accounts keys create google-cloud-vision-key.json --iam-accou
   export GOOGLE_APPLICATION_CREDENTIALS=google-cloud-vision-key.json
 ```
 
-### Call vision API
+### Make API Calls @GCPvision
 
 ```bash
 # Get the sample image used in the code sample
@@ -165,25 +161,25 @@ detect_text_uri('URL')
 
 # Packaging it!
 
-I know how to make a docker container, but I dont know how to package this whole thing as a project using [setup.py](http://setup.py) or .toml files ? ✅
+I know how to make a docker container, but I learnt how to package this whole thing as a project to run directly with CLI arguments as a script ✅
 
-************************************************they asked me to deliver a package and I dont know how to do that.************************************************ ✅(done)
+************************************************they asked me to deliver a package and I learnt to do that.************************************************ ✅(done)
 
-- I install torch and other libs -yes
-- installed detectron2 - yes
+prerequisites important -
+   - I install torch and other libs -yes
+   - installed detectron2 - yes
 
 ```python
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 
 - Almost everything is ready I have to package stuff together
-- ***Although I just fear for the code will not work, but let's just believe it to be fine***
-**- clone the repo locally  -  yes**
-**- test & fixed the code locally  !!!**
+  - clone the repo locally  -  yes**
+**- Ran tests & fixed the code locally!!!**✔️
 1. I fixed the Device issue, the .yaml was missing DEVICE flag, because of which the model was not running on CPU.
-2. I fixed the cv2_imshow() google colab function which was not working locally !!!
+2. I fixed the cv2_imshow() google colab function which was not working locally !!!✔️
 
-# Local Runs For Table Detection- Successful 🥳
+### Local Runs For Table Detection- Successful 🥳 (some fixes I made)
 
 - change the code to save cropped images - done✅
 - locally extract everything - done✅
@@ -201,6 +197,7 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 
 got translate results !! had to setup the api using pip and enable using console !
 
+### This is how you can replicate it 
 ```bash
 
 pip install google-cloud-translate==2.0.1
@@ -220,7 +217,9 @@ CHECK using str(texts) on file and see why encoding not working ! ✅
 # RUN it
 python app.py --input_folder 'FILES/FILES' --detect_full_page True --translate True
 ```
+for example if you input this -
+![Image](https://github.com/shyamgupta196/Arabic-ocr/blob/main/FILES/FILES/SHUKRAN.jpeg)
 
-
-Solution-
-I was asked to use GCP to translate the data. I simple used PADDLE OCR to extract the data and google API to Translate and save it in JSON format.
+you get such outputs 🤯
+![output](https://github.com/shyamgupta196/Arabic-ocr/blob/main/Mindful%20Automations%20Table%20%26%20Arabic%20OCR%20f157866291334892acd0d80731d68c0e/Untitled%201.png)
+![output](https://github.com/shyamgupta196/Arabic-ocr/blob/main/Mindful%20Automations%20Table%20%26%20Arabic%20OCR%20f157866291334892acd0d80731d68c0e/Untitled.png)
