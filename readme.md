@@ -1,5 +1,6 @@
 # Mindful Automations Table & Arabic OCR
 [![Views](https://komarev.com/ghpvc/?username=shyamgupta196&color=green)](https://github.com/shyamgupta196/arabic-ocr)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/shyamgupta196/Arabic-ocr/blob/main/LICENSE)
 
 Problem - 
 I was given Invoices in Arabic Language, and asked to translate and extract data from them. people were using google camera to translate invoices but it was very tedious process, to do so. I was asked to translate and store the data in JSON's, to streamline the process
