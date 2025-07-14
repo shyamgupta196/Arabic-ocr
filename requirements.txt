@@ -13,6 +13,7 @@ colorama==0.4.6
 contourpy==1.1.0
 cycler==0.11.0
 decorator==5.1.1
+torch==2.0.1
 detectron2 @ git+https://github.com/facebookresearch/detectron2.git
 executing==1.2.0
 filelock==3.12.3
@@ -86,7 +87,6 @@ tensorboard==2.14.0
 tensorboard-data-server==0.7.1
 termcolor==2.3.0
 tomli==2.0.1
-torch
 torchvision==0.15.2
 tqdm==4.66.1
 traitlets==5.9.0
