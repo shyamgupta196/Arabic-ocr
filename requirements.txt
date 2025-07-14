@@ -14,7 +14,6 @@ contourpy==1.1.0
 cycler==0.11.0
 decorator==5.1.1
 torch==2.0.1
-detectron2 @ 'git+https://github.com/facebookresearch/detectron2.git'
 executing==1.2.0
 filelock==3.12.3
 fonttools==4.42.1
@@ -98,3 +97,4 @@ wcwidth==0.2.6
 Werkzeug==2.3.7
 yacs==0.1.8
 zipp==3.16.2
+detectron2 @ 'git+https://github.com/facebookresearch/detectron2.git'
