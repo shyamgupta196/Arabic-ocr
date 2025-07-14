@@ -97,4 +97,4 @@ wcwidth==0.2.6
 Werkzeug==2.3.7
 yacs==0.1.8
 zipp==3.16.2
-detectron2 @ git+https://github.com/facebookresearch/detectron2.git -install-option='--use-pep517'
+detectron2 @ git+https://github.com/facebookresearch/detectron2.git -install-option='--no-build-isolation'
