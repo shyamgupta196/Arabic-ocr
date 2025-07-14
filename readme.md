@@ -1,6 +1,16 @@
 # Mindful Automations Table & Arabic OCR
-[![Views](https://komarev.com/ghpvc/?username=shyamgupta196&color=green)](https://github.com/shyamgupta196/arabic-ocr)
+
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1-EE4C2C?logo=pytorch)](https://pytorch.org/)
+[![Detectron2](https://img.shields.io/badge/Detectron2-main-blueviolet?logo=github)](https://github.com/facebookresearch/detectron2)
+[![Google Cloud](https://img.shields.io/badge/Cloud-Google%20Cloud-blue?logo=googlecloud)](https://cloud.google.com/)
+[![HuggingFace](https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/keremberke/yolov8s-table-extraction)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/shyamgupta196/Arabic-ocr/blob/main/LICENSE)
+[![Repo Stars](https://img.shields.io/github/stars/shyamgupta196/Arabic-ocr?style=social)](https://github.com/shyamgupta196/Arabic-ocr/stargazers)
+[![Forks](https://img.shields.io/github/forks/shyamgupta196/Arabic-ocr?style=social)](https://github.com/shyamgupta196/Arabic-ocr/network/members)
+[![Issues](https://img.shields.io/github/issues/shyamgupta196/Arabic-ocr?color=yellow)](https://github.com/shyamgupta196/Arabic-ocr/issues)
+[![Views](https://komarev.com/ghpvc/?username=shyamgupta196&color=green)](https://github.com/shyamgupta196/arabic-ocr)
+
 
 Problem - 
 I was given Invoices in Arabic Language, and asked to translate and extract data from them. people were using google camera to translate invoices but it was very tedious process, to do so. I was asked to translate and store the data in JSON's, to streamline the process
