@@ -175,8 +175,25 @@ def main():
 def translate_text(
     input: str, output: str, project_id: str = "gcp-kubernetes-ml-app"
 ) -> translate.TranslationServiceClient:
-    """Translating Text."""
 
+    """
+    Translates all Arabic text files in the specified input directory to English using Google Cloud Translation API,
+    extracts text and bounding box information from the translation response, and saves the results as JSON files
+    in the output directory.
+    Args:
+        input (str): Path to the directory containing input .txt files with Arabic text.
+        output (str): Path to the directory where output .json files will be saved.
+        project_id (str, optional): Google Cloud project ID. Defaults to "gcp-kubernetes-ml-app".
+    Returns:
+        translate.TranslationServiceClient: An instance of the TranslationServiceClient used for translation.
+    Notes:
+        - Each .txt file in the input directory is processed and a corresponding .json file is created in the output directory.
+        - The JSON output contains a list of dictionaries, each with 'text' (translated text) and 'bbox' (bounding box coordinates).
+        - Bounding box extraction relies on specific formatting in the translation response.
+        - Requires the Google Cloud Translation API and appropriate credentials.
+    """
+
+    # Initialize the TranslationServiceClient
     client = translate.TranslationServiceClient()
 
     location = "global"

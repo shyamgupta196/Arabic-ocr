@@ -258,3 +258,7 @@ python app.py --input_folder 'FILES/FILES' --detect_full_page True --translate T
 ---
 
 **Everything works! If any bugs arise, they will be fixed as needed.**
+
+---
+
+If you want to see more experiments I conducted, please check out my [notebook](https://github.com/shyamgupta196/Arabic-ocr/blob/main/main/Table_Recognition.ipynb).
